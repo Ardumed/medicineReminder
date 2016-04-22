@@ -166,6 +166,7 @@ input[type=radio]:checked + .prescription-quantity-radio-label:after {
 }
 
 #login-container {
+  width: 100%;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -198,4 +199,8 @@ input[type=radio]:checked + .prescription-quantity-radio-label:after {
 .google-login-icon {
   color: #fff;
   padding-right: 10px;
+}
+.margin-0 {
+  margin-right: 0px;
+  margin-left: 0px;
 }
