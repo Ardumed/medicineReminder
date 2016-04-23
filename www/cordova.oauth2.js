@@ -152,7 +152,7 @@ function oauth2_login() {
     }, function(token, response){
         // do something with token or response
         $('#login-container').fadeOut();
-        $('#medicine-form').fadeIn(3000);
+        $('#medicine-form').fadeIn(2500);
         $("#logs").append("<p class='success'><b>access_token: </b>"+token+"</p>");
         $("#logs").append("<p class='success'><b>response: </b>"+JSON.stringify(response)+"</p>");
     }, function(error, response){
