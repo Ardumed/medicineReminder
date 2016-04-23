@@ -78,6 +78,28 @@ $(document).ready(function() {
   });
 
   $(".submit").click(function(){
+//    console.log($("#startDate").val());
+    var sDate = new Date($("#startDate").val());
+    var eDate = new Date($("#endDate").val());
+    // prep some variables
+  var startDate = new Date(sDate.getFullYear(),sDate.getMonth(),sDate.getDate(),18,30,0,0,0); // beware: month 0 = january, 11 = december
+  var endDate = new Date(sDate.getFullYear(),sDate.getMonth(),sDate.getDate(),19,30,0,0,0);
+  var title = $("#name").val() +"'s Medicine Reminder";
+  var eventLocation = "Home";
+  var notes = $(".medicineName").val() + " Dosage: " + $(".dosage").val();
+  var success = function(message) { alert("Success: " + JSON.stringify(message)); };
+  var error = function(message) { alert("Error: " + message); };
+  var calOptions = window.plugins.calendar.getCalendarOptions(); // grab the defaults
+  calOptions.firstReminderMinutes = 120; // default is 60, pass in null for no reminder (alarm)
+  calOptions.secondReminderMinutes = 5;
+  // Added these options in version 4.2.4:
+  calOptions.recurrence = "daily"; // supported are: daily, weekly, monthly, yearly
+  calOptions.recurrenceEndDate = new Date(eDate.getFullYear(),eDate.getMonth(),eDate.getDate(),0,0,0,0,0); // leave null to add events into infinity and beyond
+  calOptions.calendarName = "MyCreatedCalendar"; // iOS only
+  calOptions.calendarId = 1; // Android only, use id obtained from listCalendars() call which is described below. This will be ignored on iOS in favor of calendarName and vice versa. Default: 1.
+  window.plugins.calendar.createEventWithOptions(title,eventLocation,notes,startDate,endDate,calOptions,success,error);
+
+//    window.plugins.calendar.createEvent(title,eventLocation,notes,startDate,endDate,success,error);
       return false;
   })
 

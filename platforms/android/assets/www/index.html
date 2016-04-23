@@ -50,10 +50,10 @@ p.error {background-color: #fee; padding:5px}
         <fieldset>
           <h2 class="fs-title">Personal Details</h2>
           <h3 class="fs-subtitle">Fill in your personal details</h3>
-          <input type="text" name="name" placeholder="Name" />
-          <input type="number" name="age" placeholder="Age(in years)" />
+          <input type="text" name="name" placeholder="Name" id="name" required/>
+          <input type="number" name="age" placeholder="Age(in years)" id="age"/>
           <div class="gender-container">
-            Gender : <input type="radio" name="gender" value="male" id="male"/><label for="male">Male</label>
+            Gender : <input type="radio" name="gender" value="male" id="male" checked="checked"/><label for="male">Male</label>
             <input type="radio" name="gender" value="female" id="female"/><label for="female">Female</label>
           </div>
           <input type="button" name="next" class="next action-button" value="Next" />
@@ -62,17 +62,17 @@ p.error {background-color: #fee; padding:5px}
           <h2 class="fs-title">Prescription Details</h2>
           <h3 class="fs-subtitle">Doctor's prescription details</h3>
           <input type="text" name="doctor" placeholder="Doctor's Name" />
-          <input type="date" name="startDate" placeholder="Prescription Start Date" onClick="$(this).removeClass('placeholderclass')" class="dateclass placeholderclass"/>
-          <input type="date" name="endDate" placeholder="Prescription End Date"  onClick="$(this).removeClass('placeholderclass')" class="dateclass placeholderclass"/>
+          <input type="date" name="startDate" placeholder="Prescription Start Date" onClick="$(this).removeClass('placeholderclass')" class="dateclass placeholderclass" id="startDate" required/>
+          <input type="date" name="endDate" placeholder="Prescription End Date"  onClick="$(this).removeClass('placeholderclass')" class="dateclass placeholderclass" id="endDate" required/>
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
         <fieldset>
           <h2 class="fs-title">Medicine Details</h2>
           <h3 class="fs-subtitle">We will remember it for you</h3>
-          <input type="text" name="fname" placeholder="Medicine Name" />
-          <input type="text" name="lname" placeholder="Dosage(eg. 3 Spoon, 2 Pills)" />
-          <input type="text" name="phone" placeholder="Phone" />
+          <input type="text" name="medicineName" placeholder="Medicine Name" class="medicineName"/>
+          <input type="text" name="dosage" placeholder="Dosage(eg. 3 Spoon, 2 Pills)" class="dosage"/>
+          <input type="text" name="details" placeholder="Additional Details" />
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="submit" name="submit" class="submit action-button" value="Submit" />
         </fieldset>

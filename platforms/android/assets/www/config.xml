@@ -2,7 +2,7 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.cordova.oauth2"
-        versionCode = "10" 
+        versionCode = "10"
         version   = "1.0.0">
 
     <name>Oauth2</name>
@@ -12,13 +12,13 @@
     </description>
 
     <author href="http://initlabs.com">
-        Rakshith Krishnappa 
+        Rakshith Krishnappa
     </author>
-	
+
     <access origin="*" />
-    
+
 	<preference name="phonegap-version" value="3.3.0" />
-	
+
 	<icon src="icon.png" />
 	<gap:splash src="splash.png" />
 
