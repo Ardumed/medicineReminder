@@ -1,6 +1,7 @@
 body {
   position: relative;
   height: 100vh;
+  background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.4)), url('http://thecodeplayer.com/uploads/media/gs.png');
 }
 .success-container {
   position: absolute;
@@ -13,14 +14,16 @@ body {
   padding: 10px;
 }
 .success-msg {
-  font-size: 45px;
+  font-size: 35px;
   color: #4B7F10;
   padding: 5px;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 .logout-msg {
-  font-size: 35px;
+  font-size: 25px;
   color: #68A615;
   padding: 2px;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
 }
 .logout-btn {
   margin: 15px;
