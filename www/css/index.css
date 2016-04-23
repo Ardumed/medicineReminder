@@ -1,8 +1,9 @@
 .body-tag {
   background-color: initial;
-/*  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(209,190,190,0.5) 80%, rgba(209,190,190,0.5) 25%), url('dimension.png');*/
 }
-
+.page-title, .page-subtitle {
+  color: #F5F4EE;
+}
 /* header styling */
 .header-container {
   background: rgba(50, 50, 50, 0.7);

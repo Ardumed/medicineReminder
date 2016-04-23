@@ -1,0 +1,28 @@
+body {
+  position: relative;
+  height: 100vh;
+}
+.success-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100vw;
+}
+.success-icon {
+  width: 20vh;
+  padding: 10px;
+}
+.success-msg {
+  font-size: 45px;
+  color: #4B7F10;
+  padding: 5px;
+}
+.logout-msg {
+  font-size: 35px;
+  color: #68A615;
+  padding: 2px;
+}
+.logout-btn {
+  margin: 15px;
+  font-size: 25px;
+}

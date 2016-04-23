@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Successfully Completed</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/success.css">
+  </head>
+  <body>
+   <div class="success-container text-center">
+    <img src="img/completed.png" class="success-icon"/>
+    <div class="success-msg">Successfully Added Reminders</div>
+    <div class="logout-msg">Now you can logout.</div>
+    <div class="btn btn-lg btn-warning logout-btn" onclick="oauth2_logout()"><i class="fa fa-google-plus google-login-icon"></i><span>Logout</span></div>
+    </div>
+    <script>
+      function oauth2_logout() {
+        window.location.assign("./index.html");
+        }
+    </script>
+  </body>
+</html>
