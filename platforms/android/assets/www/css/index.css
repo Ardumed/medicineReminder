@@ -19,7 +19,7 @@
   transform: translateY(-50%);
 }
 #medicine-form {
-/*  display: none;*/
+  display: none;
 }
 
 
@@ -74,7 +74,6 @@ body {
 }
 /*form styles*/
 #msform {
-	width: 400px;
 	margin: 50px auto;
 	text-align: center;
 	position: relative;
@@ -194,10 +193,12 @@ input[type="radio"]#male, input[type="radio"]#female {
 }
 .dateclass{
     width:100%;
+    background-color:#FFFFFF;
 }
 .dateclass.placeholderclass::before{
     width:100%;
     content:attr(placeholder);
     color: #B2B2B2;
+    background-color:#FFFFFF;
 }
 /*-----------------------------------------------------------------*/
