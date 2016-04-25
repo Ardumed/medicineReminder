@@ -153,20 +153,23 @@ function oauth2_login() {
         // do something with token or response
         $('#login-container').fadeOut();
         $('#medicine-form').fadeIn(2500);
-        $("#logs").append("<p class='success'><b>access_token: </b>"+token+"</p>");
-        $("#logs").append("<p class='success'><b>response: </b>"+JSON.stringify(response)+"</p>");
+        // $("#logs").append("<p class='success'><b>access_token: </b>"+token+"</p>");
+        // $("#logs").append("<p class='success'><b>response: </b>"+JSON.stringify(response)+"</p>");
     }, function(error, response){
         // do something with error object
         $('#login-container').fadeIn();
         $('#medicine-form').fadeOut();
-        $("#logs").append("<p class='error'><b>error: </b>"+JSON.stringify(error)+"</p>");
-        $("#logs").append("<p class='error'><b>response: </b>"+JSON.stringify(response)+"</p>");
+        // $("#logs").append("<p class='error'><b>error: </b>"+JSON.stringify(error)+"</p>");
+        // $("#logs").append("<p class='error'><b>response: </b>"+JSON.stringify(response)+"</p>");
     });
 }
 
-function signOut() {
-    var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(function () {
-      console.log('User signed out.');
-    });
+function addmore() {
+  $('#reset-btn').trigger('click');
+  $('#success-page').fadeOut();
+  $('#medicine-form').fadeIn();
   }
+function oauth2_logout() {
+  $('#success-page').fadeOut();
+  $('#login-container').fadeIn();
+}

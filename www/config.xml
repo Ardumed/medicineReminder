@@ -5,14 +5,14 @@
         versionCode = "10"
         version   = "1.0.0">
 
-    <name>Oauth2</name>
+    <name>MedicineReminder</name>
 
     <description>
-        Oauth2 in Cordova using Phonegap Build
+        It adds reminders for taking Medicine dosage.
     </description>
 
-    <author href="http://initlabs.com">
-        Rakshith Krishnappa
+    <author href="https://github.com/himanshusingh2407">
+        Himanshu Singh
     </author>
 
     <access origin="*" />

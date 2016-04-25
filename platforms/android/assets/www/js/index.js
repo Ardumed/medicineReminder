@@ -87,7 +87,7 @@ $(document).ready(function() {
   var title = $("#name").val() +"'s Medicine Reminder";
   var eventLocation = "Home";
   var notes = $(".medicineName").val() + " Dosage: " + $(".dosage").val();
-  var success = function(message) { alert("Successfully Added Reminders to Calendar." + JSON.stringify(message)); window.location.assign("./success.html");};
+  var success = function(message) { alert("Successfully Added Reminders to Calendar." + JSON.stringify(message)); $('#success-page').fadeIn();$('#medicine-form').fadeOut();};
   var error = function(message) { alert("Error: " + message); };
   var calOptions = window.plugins.calendar.getCalendarOptions(); // grab the defaults
   calOptions.firstReminderMinutes = 120; // default is 60, pass in null for no reminder (alarm)

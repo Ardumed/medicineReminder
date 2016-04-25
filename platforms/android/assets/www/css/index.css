@@ -203,3 +203,32 @@ input[type="radio"]#male, input[type="radio"]#female {
     background-color:#FFFFFF;
 }
 /*-----------------------------------------------------------------*/
+#success-page {
+  display: none;
+}
+.success-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100vw;
+}
+.success-icon {
+  width: 20vh;
+  padding: 10px;
+}
+.success-msg {
+  font-size: 35px;
+  color: #4B7F10;
+  padding: 5px;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+.logout-msg {
+  font-size: 25px;
+  color: #68A615;
+  padding: 2px;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+.logout-btn {
+  margin: 15px;
+  font-size: 25px;
+}
