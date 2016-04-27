@@ -218,13 +218,13 @@ input[type="radio"]#male, input[type="radio"]#female {
 }
 .success-msg {
   font-size: 35px;
-  color: #4B7F10;
+  color: #fff;
   padding: 5px;
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 .logout-msg {
   font-size: 25px;
-  color: #68A615;
+  color: #fff;
   padding: 2px;
   text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
 }

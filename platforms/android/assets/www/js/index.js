@@ -101,7 +101,7 @@ $(document).ready(function() {
 
 //    window.plugins.calendar.createEvent(title,eventLocation,notes,startDate,endDate,success,error);
       return false;
-  })
+  });
 
   /*-------------------------------------------------------------------------------------------------*/
 });

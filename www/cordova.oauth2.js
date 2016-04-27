@@ -166,6 +166,10 @@ function oauth2_login() {
 
 function addmore() {
   $('#reset-btn').trigger('click');
+  $('fieldset').hide();
+  $('#first-fieldset').show();
+  $('#first-fieldset').css({'transform': 'scale(1)', 'opacity': 1});
+  $('#progressbar li').removeClass('active');
   $('#success-page').fadeOut();
   $('#medicine-form').fadeIn();
   }
