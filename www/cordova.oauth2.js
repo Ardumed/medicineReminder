@@ -174,6 +174,7 @@ function addmore() {
   $('#medicine-form').fadeIn();
 }
 function oauth2_logout() {
+  $('#reset-btn').trigger('click');
   $('#success-page').fadeOut();
   $('#login-container').fadeIn();
 }

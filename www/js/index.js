@@ -82,12 +82,16 @@ $(document).ready(function() {
     var sDate = new Date($("#startDate").val());
     var eDate = new Date($("#endDate").val());
     // prep some variables
-    var startDate = new Date(sDate.getFullYear(),sDate.getMonth(),sDate.getDate(),18,30,0,0,0); // beware: month 0 = january, 11 = december
-    var endDate = new Date(sDate.getFullYear(),sDate.getMonth(),sDate.getDate(),19,30,0,0,0);
+    var startDate = new Date(sDate.getFullYear(),sDate.getMonth(),sDate.getDate(),08,00,0,0,0); // beware: month 0 = january, 11 = december
+    var endDate = new Date(sDate.getFullYear(),sDate.getMonth(),sDate.getDate(),09,00,0,0,0);
     var title = $("#name").val() +"'s Medicine Reminder";
     var eventLocation = "Home";
-    var notes = $(".medicineName").val() + " Dosage: " + $(".dosage").val();
-    var success = function(message) { alert("Successfully Added Reminders to Calendar." + JSON.stringify(message)); $('#success-page').fadeIn();$('#medicine-form').fadeOut();};
+    var notes = $(".medicineName1").val() + " Dosage: " + $(".dosage1").val();
+    if($(".medicineName2").val())
+      notes += $(".medicineName2").val() + " Dosage: " + $(".dosage2").val();
+    if($(".medicineName3").val())
+      notes += $(".medicineName3").val() + " Dosage: " + $(".dosage3").val();
+    var success = function(message) { $('#success-page').fadeIn();$('#medicine-form').fadeOut();};
     var error = function(message) { alert("Error: " + message); };
     var calOptions = window.plugins.calendar.getCalendarOptions(); // grab the defaults
     calOptions.firstReminderMinutes = 120; // default is 60, pass in null for no reminder (alarm)
